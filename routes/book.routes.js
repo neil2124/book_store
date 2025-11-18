@@ -7,6 +7,10 @@ router.get('/', (req, res) => {
   res.json(BOOKS);
 });
 
+router.get('/book1', (req,res) => {
+  res.json("Book1");
+});
+
 router.get('/:id', (req, res) => {
   const id = parseInt(req.params.id);
 
